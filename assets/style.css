@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #E5E4E2;
+    font-family:'Courier New', Courier, monospace;
+    color: #343434;
+}
+
+body.dark-mode {
+    background-color: #28282B;
+    color: #E5E4E2;
+}
+
+main {
+    max-width: 992px;
+    min-width: 320px;
+    margin: auto;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#main-title {
+    font-size: 50px;
+    padding: 20px;
+    margin: 15px;
+}
+
+#description, #instruction {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#image {
+    width: 70%;
+    margin: 10px;
+    padding: 20px;
+}
+
+button {
+    background-color: #FFBF00;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+button:hover {
+    background-color: #ffbf0085; 
+}
+
+button.dark-mode {
+    background-color: #0F52BA;
+    color: #E5E4E2;
+}
+
+button.dark-mode:hover {
+    background-color: #0f53ba79;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #b38602;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+footer a:hover {
+    color: #757518;
+}
+
+footer.dark-mode a {
+    color: #0F52BA;
+}
+
+footer.dark-mode a:hover {
+    color: #3461a5;
+}
