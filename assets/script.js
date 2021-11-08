@@ -16,16 +16,22 @@ function changeText() {
     if(body.classList.contains(darkModeClass)) {
         button.innerHTML = '<i class="far fa-sun"></i> Change theme';
         description.innerHTML = 'You are currently viewing it in Dark Mode.'
-        
+        return;
     }
+
+    button.innerHTML = '<i class="far fa-moon"></i> Change theme';
+    description.innerHTML = 'You are currently viewing it in Light Mode.'
 }
 
 function changeImg() {
-    document.getElementById('image').src="imgs/hugo-moon.png"
-
+    if (body.classList.contains(darkModeClass)) {
+        document.getElementById('image').src="imgs/hugo-moon.png"
+        return;
+    }
+    document.getElementById('image').src="imgs/hugo-waiting.png"
 }
 
-const darkModeClass = 'dark-mode'
+const darkModeClass = 'dark-mode';
 const button = document.getElementById('mode-selector');
 const h1 = document.getElementById('main-title');
 const description = document.getElementById('description');

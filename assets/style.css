@@ -36,12 +36,13 @@ main {
     margin-bottom: 10px;
 }
 
-#image {
-    width: 70%;
-    margin: 10px;
-    padding: 20px;
+.img-container {
+    width: 60%;
 }
 
+#image {
+    width: 100%;
+}
 button {
     background-color: #FFBF00;
     padding: 15px 20px;
@@ -66,7 +67,7 @@ button.dark-mode:hover {
 }
 
 footer {
-    margin-top: 50px;
+    margin-top: 18px;
     padding: 10px 0px;
     text-align: center;
 }
